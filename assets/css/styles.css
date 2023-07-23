@@ -11,5 +11,11 @@ div.container{
 
 nav.heading{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+div.headIcon{
+    font-size: 1.5rem;
 }
