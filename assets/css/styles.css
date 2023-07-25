@@ -3,6 +3,45 @@ body{
     padding: 0px;
 }
 
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: topmenu containing bottommenu;
+}
+
+#searchitems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#searchinput{
+    border-radius: 3px; 
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: none;
+    outline-style: none;
+    height: 20px;
+    width: 50vw;
+    
+}
+/*#searchinput:{
+    border-style: none;  
+}*/
+
+#searchbutton{
+    text-align: center;
+    border:0px;
+    border-radius: 3px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: white;
+    padding-left: 2px;
+    height: 22px;
+    font-size: 1.2rem;
+    
+}
+
 div.container{
     width: 100vw;
     height: 100vh;
@@ -19,3 +58,4 @@ nav.heading{
 div.headIcon{
     font-size: 1.5rem;
 }
+
