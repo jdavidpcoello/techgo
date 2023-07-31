@@ -6,26 +6,22 @@ body{
     align-items: center;
     background-color: #0c7df4;
 }
-
 .general{
     width: 100vw;
     height: 100vh;
     background-color:rgb(12, 125, 244);
-    background: linear-gradient(90deg, rgba(12,125,244,1) 100%, rgba(27,37,242,1) 100%);
+    background: linear-gradient(45 deg, rgba(12,125,244,1) 100%, rgba(27,37,242,1) 100%);
     display: grid;
     grid-template-rows: .25fr auto .25fr;
     align-items:center;
     justify-content: center;
+    background-image: linear-gradient(45deg, purple, blue);
     }
-
-.up{
-    grid-row: 1/3;
-}
 
 .center{
     height: 80vh;
     width: 90vw;
-    background-color: hsla(0, 0%, 100%, 0.349);
+    background-color:rgba(242,242,242, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,18 +29,10 @@ body{
     justify-content: space-evenly;
     border-radius: 10px;
 }
-
-.down{
-    grid-row: 3/3;
-}
-
-
 /*------------- para Loginpage -----------------*/
-
 img#logo{
     width: 75vw;
 }
-
 .login-items{
     height: 20vh;
     width: 80vw;
@@ -56,7 +44,6 @@ img#logo{
     margin-bottom: 0px;
     
 }
-
 .label-form{
     align-self: flex-start;
     color: #f2f2f2;
@@ -64,7 +51,6 @@ img#logo{
     margin-top: 15px;
     margin-bottom: 5px;
 }
-
 .login-input{
     background-color: #1b25f2;
     color: #f2f2f2;
@@ -76,11 +62,9 @@ img#logo{
     width: 75vw;
     padding:0px 10px;
 }
-
 .login-input::placeholder{
     color: #0c7df4;
 }
-
 button#login-button{
     background-color: #1b25f2;
     border-radius: 20px;
@@ -91,7 +75,6 @@ button#login-button{
     height: 50px;
     color: #f2f2f2;
 }
-
 div.center div.other-options{
     width: 75vw;
     display: flex;
@@ -101,7 +84,6 @@ div.center div.other-options{
     text-decoration: underline;
 }
 /*--------------------- area de encabezado -------------------------*/
-
 .searchitems{
     height: 10vh;
     margin-top: 0px;
@@ -113,12 +95,10 @@ div.center div.other-options{
     top:0px;
     left:0;
 }
-
 .searchform{
     display: flex;
     flex-direction:row;
 }
-
 #searchinput{
     padding-left: 10px;
     border-radius: 10px; 
@@ -133,7 +113,6 @@ div.center div.other-options{
 #searchinput::placeholder{
     color:#a3a3a3;  
 }
-
 #searchbutton{
     display: flex;
     align-items: center;
@@ -148,26 +127,18 @@ div.center div.other-options{
     font-size: 1rem;
     
 }
-
-
-
 div.heading{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top:22px;
 }
-
 div.headIcon{
     font-style: none;
     text-align:justify;
     font-size: 1.8rem;
 }
-
-
-
 /*-------------------------------contenido principal---------------------------------*/
-
 .maincontent{
     overflow:auto;
     display: flex;
@@ -183,9 +154,7 @@ div.headIcon{
     
     z-index: -100;
 }
-
 /*-------------------------------menu inferior------------------------------------*/
-
 .footermenu{
     height: 15vw;
     background-color: #f2f2f2;
@@ -198,23 +167,17 @@ div.headIcon{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
 }
-
 .iconstyles{
     font-size: 1.5rem;
 }
-
 .current{
     font-size: 2rem;
     margin-bottom: 5vw;
     color: #1b25f2!important;
 }
 /*------------------------------ fin base de app -------------------------------*/
-
-
 /*------------------------------ landing ------------------------*/
-
 .firstlook{
     background-color: rgba(242,242,242, 0.5);
     width: 95%;
@@ -225,5 +188,4 @@ div.headIcon{
     justify-content: center;
     align-items: center;
     margin: 5px 0px;
-
 }
