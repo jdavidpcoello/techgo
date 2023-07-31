@@ -1,15 +1,19 @@
+/*-----------------------------base de pagina--------------------------*/
 body{
     margin: 0px;
     padding: 0px;
+    display: flex;
+    align-items: center;
+    background-color: #0c7df4;
 }
 
-.container{
+.general{
     width: 100vw;
     height: 100vh;
-    background-color:#479b99;
+    background-color:rgb(12, 125, 244);
+    background: linear-gradient(90deg, rgba(12,125,244,1) 100%, rgba(27,37,242,1) 100%);
     display: grid;
-    grid-template-rows: .25fr 1fr .25fr;
-    grid-template-areas: topmenu containing bottommenu;
+    grid-template-rows: .25fr auto .25fr;
     align-items:center;
     justify-content: center;
     }
@@ -19,15 +23,14 @@ body{
 }
 
 .center{
-    box-shadow: ;
-    height: 500px;
-    width: 300px;
+    height: 80vh;
+    width: 90vw;
     background-color: hsla(0, 0%, 100%, 0.349);
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-row: 2/3;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 10px;
 }
 
@@ -39,75 +42,191 @@ body{
 /*------------- para Loginpage -----------------*/
 
 img#logo{
-    background-color:#479b99;
-    width: 120px;
+    width: 75vw;
 }
 
 .login-items{
+    height: 20vh;
+    width: 80vw;
     display: flex;
     flex-direction:column ;
     align-items: center;
-    margin-bottom: 100px;
+    align-content:space-around;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    
+}
+
+.label-form{
+    align-self: flex-start;
+    color: #f2f2f2;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .login-input{
-    border-radius: 3px; 
+    background-color: #1b25f2;
+    color: #f2f2f2;
+    text-justify: center;
+    border-radius: 30px; 
     border-style: none;
     outline-style: none;
-    margin-top: 15px;
-    height: 20px;
-    width: 50vw;
+    height: 70px;
+    width: 75vw;
+    padding:0px 10px;
+}
+
+.login-input::placeholder{
+    color: #0c7df4;
 }
 
 button#login-button{
-    margin-top: 15px;
-    height: 20px;
+    background-color: #1b25f2;
+    border-radius: 20px;
+    border-style: none;
+    align-self:flex-end;
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    color: #f2f2f2;
 }
-/*----------------------------------------------*/
 
-#searchitems{
+div.center div.other-options{
+    width: 75vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
+    color: #1b25f2;
+    text-decoration: underline;
+}
+/*--------------------- area de encabezado -------------------------*/
+
+.searchitems{
+    height: 10vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: fixed;
+    top:0px;
+    left:0;
+}
+
+.searchform{
+    display: flex;
+    flex-direction:row;
 }
 
 #searchinput{
-    border-radius: 3px; 
+    padding-left: 10px;
+    border-radius: 10px; 
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-style: none;
     outline-style: none;
-    height: 20px;
-    width: 50vw;
+    height: 25px;
+    width: 70vw;
     
 }
-/*#searchinput:{
-    border-style: none;  
-}*/
+#searchinput::placeholder{
+    color:#a3a3a3;  
+}
 
 #searchbutton{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border:0px;
-    border-radius: 3px;
+    border-radius: 10px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     background-color: white;
-    padding-left: 2px;
-    height: 22px;
-    font-size: 1.2rem;
+    padding:0px 2px;
+    height:25px;
+    font-size: 1rem;
     
 }
 
 
 
-nav.heading{
+div.heading{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
+    padding-top:22px;
 }
 
 div.headIcon{
+    font-style: none;
+    text-align:justify;
     font-size: 1.5rem;
 }
 
+a i {
+    color: black;
+    text-decoration: none;
+}
+
+/*-------------------------------contenido principal---------------------------------*/
+
+.maincontent{
+    overflow:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 84vh;
+    position: fixed;
+    top: 83px;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(19, 18, 18, 0);
+    
+    z-index: -100;
+}
+
+/*-------------------------------menu inferior------------------------------------*/
+
+.footermenu{
+    height: 10vw;
+    background-color: #f2f2f2;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.iconstyles{
+    font-size: 1.5rem;
+}
+
+.current{
+    font-size: 2rem;
+    margin-bottom: 5vw;
+    color: #1b25f2!important;
+}
+/*------------------------------ fin base de app -------------------------------*/
+
+
+/*------------------------------ landing ------------------------*/
+
+.firstlook{
+    background-color: rgba(242,242,242, 0.5);
+    width: 95%;
+    min-height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+
+}

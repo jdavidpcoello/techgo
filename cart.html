@@ -13,13 +13,13 @@
         <div class="container-fluid p-0">
             <div class="row m-0 ">
                 <div class="col h-20 searchitems p-0"> <!-- encabezado -->
-                    <div class="headIcon">
+                    <div class="headIcon" onclick="window.history.back();">
                         <i class="fa-solid fa-arrow-left-long"></i>
                     </div>
                     <div>
                         <form class="searchform" action="">
                             <input id="searchinput" type="text" name="" id="">
-                            <div id="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div id="searchbutton" onclick="window.location.href='login.html'"><i class="fa-solid fa-magnifying-glass"></i></div>
                         </form>                        
                     </div>
                     <div class="headIcon"><i class="fa-solid fa-user"></i></div>
@@ -35,11 +35,11 @@
            
                 <div class="col-sm12 h-20"> 
                     <div class="footermenu">
-                        <div class="iconstyles"><i class="fa-solid fa-bars"></i></div>
-                        <div class="iconstyles"><i class="fa-solid fa-message"></i></div>
-                        <div class="iconstyles current"><i class="fa-solid fa-house"></i></div>
-                        <div class="iconstyles"><i class="fa-solid fa-cart-shopping"></i></div>
-                        <div class="iconstyles"><i class="fa-solid fa-bell"></i></div>
+                        <a href=".html"><div class="iconstyles"><i class="fa-solid fa-bars"></i></div></a>
+                        <a href="messages.html"><div class="iconstyles"><i class="fa-solid fa-message"></i></div></a>
+                        <a href="index.html"><div class="iconstyles"><i class="fa-solid fa-house"></i></div></a>
+                        <a href="cart.html"><div class="iconstyles current"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                        <a href="notifications.html"><div class="iconstyles"><i class="fa-solid fa-bell"></i></div></a>
                     </div>
                 </div>
             </div>
