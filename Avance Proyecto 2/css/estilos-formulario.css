@@ -19,6 +19,22 @@ label.form-label {
     align-items: center;
 }
 
+.btn {
+    padding: 5px 10px;
+    border: none;
+    margin: 0 5px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-editar {
+    background-color: green;
+}
+
+.btn-eliminar {
+    background-color: red;
+}
+
 @media (min-width: 800px) {
     .formulario {
             background-color: white;

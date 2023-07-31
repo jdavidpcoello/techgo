@@ -25,6 +25,15 @@ body{
     background: linear-gradient(to right, #B06AB3, #4568DC); 
 }
 
+.form-text {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.form-text-child{
+  padding-right: 5px;
+}
+
 @media (min-width: 800px) {
     .imagen {
       width: 20rem;
