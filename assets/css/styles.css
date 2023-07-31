@@ -108,7 +108,7 @@ div.center div.other-options{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: fixed;
     top:0px;
     left:0;
@@ -126,7 +126,7 @@ div.center div.other-options{
     border-bottom-right-radius: 0px;
     border-style: none;
     outline-style: none;
-    height: 25px;
+    height: 30px;
     width: 70vw;
     
 }
@@ -144,7 +144,7 @@ div.center div.other-options{
     border-bottom-left-radius: 0px;
     background-color: white;
     padding:0px 2px;
-    height:25px;
+    height:30px;
     font-size: 1rem;
     
 }
@@ -161,7 +161,7 @@ div.heading{
 div.headIcon{
     font-style: none;
     text-align:justify;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 
@@ -174,7 +174,7 @@ div.headIcon{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 84vh;
+    height: 82vh;
     position: fixed;
     top: 83px;
     left: 0;
@@ -187,7 +187,7 @@ div.headIcon{
 /*-------------------------------menu inferior------------------------------------*/
 
 .footermenu{
-    height: 10vw;
+    height: 15vw;
     background-color: #f2f2f2;
     width: 100vw;
     position: fixed;
